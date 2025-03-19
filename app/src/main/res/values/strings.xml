@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">KSPEU</string>
+    <string name="fragment_login_vvedite_login">Введите логин</string>
+    <string name="fragment_login_vvedite_parol">Введите пароль</string>
+    <string name="fragment_login_vvoyti">Войти</string>
+    <string name="fragment_login_vvhod_v_sistemu_kgeu">Вход в систему КГЭУ</string>
+    <string name="created_by_act_1_21">Created by ACT-1-21</string>
 </resources>
