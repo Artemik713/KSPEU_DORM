@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/background_image" />
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:angle="167.89"
+                android:startColor="#C7DCFF"
+                android:endColor="#80F1F4F8"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>
