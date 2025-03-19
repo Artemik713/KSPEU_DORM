@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background">
@@ -19,7 +20,7 @@
         android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily=""
+        android:fontFamily="@font/gilroy_bold"
         android:text="@string/fragment_login_vvhod_v_sistemu_kgeu"
         android:textColor="@color/black"
         android:textSize="32sp"
@@ -53,8 +54,9 @@
             android:id="@+id/login_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily=""
+            android:fontFamily="@font/gilroy_light"
             android:textSize="14sp" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -78,13 +80,13 @@
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="184dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="193dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_background"
+        android:fontFamily="@font/gilroy_regular"
         android:text="@string/fragment_login_vvoyti"
         android:textColor="@color/white"
-        android:fontFamily=""
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@id/bottom_rectangle"
         app:layout_constraintStart_toStartOf="@id/bottom_rectangle"
@@ -94,13 +96,26 @@
         android:id="@+id/created_by_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="@font/gilroy_bold"
         android:text="@string/created_by_act_1_21"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:fontFamily="@"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="103dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/created_by_text"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
