@@ -1,28 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@drawable/gradient_background">
 
-    <EditText
-        android:id="@+id/usernameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Имя пользователя"
-        android:inputType="text" />
+    <View
+        android:id="@+id/top_rectangle"
+        android:layout_width="366dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="121dp"
+        android:background="@drawable/rectangle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Пароль"
-        android:inputType="textPassword" />
+        android:fontFamily=""
+        android:text="Вход в систему КГЭУ"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@id/top_rectangle"
+        app:layout_constraintEnd_toEndOf="@id/top_rectangle"
+        app:layout_constraintStart_toStartOf="@id/top_rectangle"
+        app:layout_constraintTop_toTopOf="@id/top_rectangle" />
+
+    <View
+        android:id="@+id/bottom_rectangle"
+        android:layout_width="341dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/rectangle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_rectangle"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_input_layout"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Введите логин"
+        app:layout_constraintEnd_toEndOf="@id/bottom_rectangle"
+        app:layout_constraintStart_toStartOf="@id/bottom_rectangle"
+        app:layout_constraintTop_toTopOf="@id/bottom_rectangle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily=""
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_layout"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Введите пароль"
+        app:layout_constraintEnd_toEndOf="@id/bottom_rectangle"
+        app:layout_constraintStart_toStartOf="@id/bottom_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/login_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Войти" />
+        android:id="@+id/login_button"
+        android:layout_width="184dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:fontFamily=""
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/bottom_rectangle"
+        app:layout_constraintStart_toStartOf="@id/bottom_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/password_input_layout" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/created_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Created by ACT-1-21"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
