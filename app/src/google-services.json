@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185472516882",
+    "project_id": "kspeu-6a19f",
+    "storage_bucket": "kspeu-6a19f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185472516882:android:d00d5e281fd911b4be69cb",
+        "android_client_info": {
+          "package_name": "com.example.kspeu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE4NUGmh52SN6tC89V-znLbGKQxdpCu_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
