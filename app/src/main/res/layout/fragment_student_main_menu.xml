@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_gradient">
+
+    <TextView
+        android:id="@+id/main_menu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/fragment_student_main_menu_text"
+        app:layout_constraintBottom_toTopOf="@+id/avatar_card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/avatar_image_view"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="82dp"
+        android:layout_marginStart="14dp"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="#4D000000"
+        app:strokeWidth="1dp"/>
+
+    <!-- Прямоугольник под аватар (Rectangle 9) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/avatar_card_view"
+        android:layout_width="269dp"
+        android:layout_height="73dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="1dp"
+        app:layout_constraintStart_toEndOf="@id/avatar_image_view"
+        app:layout_constraintTop_toTopOf="@id/avatar_image_view"
+        android:layout_marginStart="21dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Имя Фамилия Отчество -->
+            <Button
+                android:id="@+id/user_name_button"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="Gilroy-Bold"
+                android:gravity="start|center_vertical"
+                android:text="@string/fragment_student_main_menu_FIO"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Информация об общежитии, комнате -->
+            <Button
+                android:id="@+id/dorm_info_button"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="Aboreto"
+                android:gravity="start|center_vertical"
+                android:text="@string/fragment_student_main_menu_inf_ob_obshage"
+                android:textAllCaps="false"
+                android:textColor="#A1A1A1"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/user_name_button"
+                app:layout_constraintTop_toBottomOf="@id/user_name_button" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Поиск -->
+
+    <!-- Input Field -->
+
+    <!-- Загрузить Баллы -->
+
+    <TextView
+        android:id="@+id/search_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/gilroy_light"
+        android:text="@string/fragment_student_main_menu_search"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_image_view" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/fragment_student_main_menu_search_button"
+        android:paddingStart="15dp"
+        android:textColorHint="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/search_text_view"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_room_button"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="13dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/list_SSO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#CAC4D0"
+        app:strokeWidth="1000dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/fragment_student_main_menu_my_room"
+            android:textColor="#1D1B20"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/list_SSO"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#CAC4D0"
+        app:strokeWidth="1dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="310dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/fragment_student_main_menu_list_SSO"
+            android:textColor="#1D1B20"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Баллы -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/points_button"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_SSO"
+        app:strokeColor="#CAC4D0"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/fragment_student_main_menu_balls_text"
+            android:textColor="#1D1B20"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Уведомления -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notifications_button"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/points_button"
+        app:strokeColor="#CAC4D0"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/fragment_student_main_menu_notifications_text"
+            android:textColor="#1D1B20"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Акты -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/acts_button"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notifications_button"
+        app:strokeColor="#CAC4D0"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/fragment_student_main_menu_acts_text"
+            android:textColor="#1D1B20"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Создать запрос -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/create_request_button"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/acts_button"
+        app:strokeColor="#CAC4D0"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/fragment_student_main_menu_create_request_text"
+            android:textColor="#1D1B20"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Выход -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logout_button"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/create_request_button"
+        app:strokeColor="#CAC4D0"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/fragment_student_main_menu_logout_text"
+            android:textColor="#852221"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/created_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/created_by_act_1_21"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="103dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/created_by_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

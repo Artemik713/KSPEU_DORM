@@ -5,4 +5,16 @@
     <string name="fragment_login_vvoyti">Войти</string>
     <string name="fragment_login_vvhod_v_sistemu_kgeu">Вход в систему КГЭУ</string>
     <string name="created_by_act_1_21">Created by ACT-1-21</string>
+    <string name="fragment_student_main_menu_my_room">Моя комната</string>
+    <string name="fragment_student_main_menu_list_SSO">Список активистов ССО</string>
+    <string name="fragment_student_main_menu_text">Главное меню</string>
+    <string name="fragment_student_main_menu_FIO">Имя Фамилия Отчество</string>
+    <string name="fragment_student_main_menu_inf_ob_obshage">Информация об общежитии, комнате</string>
+    <string name="fragment_student_main_menu_search">Поиск</string>
+    <string name="fragment_student_main_menu_search_button">Поиск</string>
+    <string name="fragment_student_main_menu_balls_text">Баллы</string>
+    <string name="fragment_student_main_menu_notifications_text">Уведомления</string>
+    <string name="fragment_student_main_menu_acts_text">Акты</string>
+    <string name="fragment_student_main_menu_create_request_text">Создать запрос</string>
+    <string name="fragment_student_main_menu_logout_text">Выход</string>
 </resources>
