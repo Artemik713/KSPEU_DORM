@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -58,7 +59,8 @@ class LoginFragment : Fragment() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     val user = auth.currentUser
-                    // TODO: Перейти на следующий экран
+                    // Переход на следующий экран
+                    findNavController().navigate(R.id.action_loginFragment_to_mainMenuFragment)
                     Toast.makeText(context, "Authentication success.", Toast.LENGTH_SHORT).show()
                 } else {
                     // If sign in fails, display a message to the user.
