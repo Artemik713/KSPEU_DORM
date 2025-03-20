@@ -1,6 +1,7 @@
 package com.example.kspeu
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,6 +44,15 @@ class LoginFragment : Fragment() {
         val email = loginEditText.text.toString()
         val password = passwordEditText.text.toString()
 
+        // Проверка на пустоту
+        if (email.isEmpty() || password.isEmpty()) {
+            Toast.makeText(context, "Email или пароль не могут быть пустыми.", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        // Вывод значений в лог
+        Log.d("LoginFragment", "Email: $email, Password: $password")
+
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
@@ -52,6 +62,8 @@ class LoginFragment : Fragment() {
                     Toast.makeText(context, "Authentication success.", Toast.LENGTH_SHORT).show()
                 } else {
                     // If sign in fails, display a message to the user.
+                    // Вывод ошибки в лог
+                    Log.e("LoginFragment", "Authentication failed", task.exception)
                     Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                 }
             }
