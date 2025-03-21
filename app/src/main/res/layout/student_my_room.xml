@@ -8,6 +8,177 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@id/StudentDescribtion"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:foreground="@drawable/rectangle_background_menu"
+        android:foregroundTint="#262C2A2A"
+        android:foregroundTintMode="multiply"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelMyRoom"
+        app:layout_constraintVertical_bias="0.804"
+        app:strokeColor="#342D3E"
+        app:strokeWidth="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="#4D000000"
+            app:strokeWidth="1dp"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/StudentDescribtion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:autoSizeMaxTextSize="36dp"
+            android:autoSizeMinTextSize="23dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/n_n_z"
+            android:textAlignment="textStart"
+            android:textColorHighlight="#090909"
+            android:textDirection="locale"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds,RtlSymmetry" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/StudentDescribtion"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:foreground="@drawable/rectangle_background_menu"
+        android:foregroundTint="#262C2A2A"
+        android:foregroundTintMode="multiply"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelMyRoom"
+        app:layout_constraintVertical_bias="0.615"
+        app:strokeColor="#342D3E"
+        app:strokeWidth="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="#4D000000"
+            app:strokeWidth="1dp"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/StudentDescribtion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:autoSizeMaxTextSize="36dp"
+            android:autoSizeMinTextSize="23dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/n_n_z"
+            android:textAlignment="textStart"
+            android:textColorHighlight="#090909"
+            android:textDirection="locale"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds,RtlSymmetry" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/StudentDescribtion"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:foreground="@drawable/rectangle_background_menu"
+        android:foregroundTint="#262C2A2A"
+        android:foregroundTintMode="multiply"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelMyRoom"
+        app:layout_constraintVertical_bias="0.421"
+        app:strokeColor="#342D3E"
+        app:strokeWidth="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="#4D000000"
+            app:strokeWidth="1dp"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/StudentDescribtion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:autoSizeMaxTextSize="36dp"
+            android:autoSizeMinTextSize="23dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/n_n_z"
+            android:textAlignment="textStart"
+            android:textColorHighlight="#090909"
+            android:textDirection="locale"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds,RtlSymmetry" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/LabelMyRoom"
         android:layout_width="231dp"
         android:layout_height="45dp"
@@ -42,6 +213,63 @@
             android:textDirection="locale"
             android:textSize="24sp"
             tools:ignore="DuplicateIds,InvalidId,RtlSymmetry" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/StudentDescribtion"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:foreground="@drawable/rectangle_background_menu"
+        android:foregroundTint="#262C2A2A"
+        android:foregroundTintMode="multiply"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelMyRoom"
+        app:layout_constraintVertical_bias="0.221"
+        app:strokeColor="#342D3E"
+        app:strokeWidth="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="#4D000000"
+            app:strokeWidth="1dp"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/StudentDescribtion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:autoSizeMaxTextSize="36dp"
+            android:autoSizeMinTextSize="23dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/n_n_z"
+            android:textAlignment="textStart"
+            android:textColorHighlight="#090909"
+            android:textDirection="locale"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds,RtlSymmetry" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -98,5 +326,20 @@
             android:textDirection="locale"
             android:textSize="15sp"
             tools:ignore="DuplicateIds,RtlSymmetry" />
+
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="354dp"
+        android:layout_height="47dp"
+        android:background="#003DA5"
+        android:editable="true"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Посмотреть график дежурств"
+        android:textColor="#F2EEEE"
+        app:layout_constraintCircleRadius="?attr/dialogCornerRadius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="772dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
