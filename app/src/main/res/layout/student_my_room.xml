@@ -99,15 +99,4 @@
             android:textSize="15sp"
             tools:ignore="DuplicateIds,RtlSymmetry" />
     </androidx.cardview.widget.CardView>
-
-    <include
-        android:id="@+id/test_include"
-        layout="@layout/test"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
