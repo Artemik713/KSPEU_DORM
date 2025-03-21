@@ -19,4 +19,6 @@
     <string name="fragment_student_main_menu_logout_text">Выход</string>
     <string name="MyRoom">Моя комната</string>
     <string name="n_n_z">Фамилия Имя Отчество \nИнститут:\nГруппа: Z</string>
+    <string name="student_my_room_button_text">Посмотреть график дежурств</string>
+    <string name="student_my_room_information_about_room">Информация о комнате</string>
 </resources>
