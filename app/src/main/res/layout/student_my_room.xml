@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_with_gradient">
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/LabelMyRoom"
         android:layout_width="231dp"
@@ -51,7 +52,6 @@
         android:layout_marginTop="70dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="60dp"
-
         android:foreground="@drawable/rectangle_background_menu"
         android:foregroundTint="#262C2A2A"
         android:foregroundTintMode="multiply"
@@ -98,8 +98,16 @@
             android:textDirection="locale"
             android:textSize="15sp"
             tools:ignore="DuplicateIds,RtlSymmetry" />
-
-
     </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/test_include"
+        layout="@layout/test"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
