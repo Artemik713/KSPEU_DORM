@@ -1,0 +1,15 @@
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.gitignore
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.name b/.idea/.name
+--- a/.idea/.name	(revision 8042f087e6bf347fe491e62f05875451e7e65a6a)
++++ b/.idea/.name	(date 1742449898863)
+@@ -1,1 +1,1 @@
+-.gitignore
+\ No newline at end of file
++KSPEU
+\ No newline at end of file
