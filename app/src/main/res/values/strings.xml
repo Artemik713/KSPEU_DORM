@@ -21,4 +21,5 @@
     <string name="n_n_z">Фамилия Имя Отчество \nИнститут:\nГруппа: Z</string>
     <string name="student_my_room_button_text">Посмотреть график дежурств</string>
     <string name="student_my_room_information_about_room">Информация о комнате</string>
+    <string name="students_points_view_prosmotr_ballov">Просмотр баллов</string>
 </resources>
