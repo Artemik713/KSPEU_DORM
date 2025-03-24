@@ -24,4 +24,12 @@
     <string name="students_points_view_prosmotr_ballov">Просмотр баллов</string>
     <string name="students_points_view_select_year_label">Выберите учебный год</string>
     <string name="students_points_view_add_achievement">Добавить достижения</string>
+    <string name="students_points_view_quarter_1">Первый квартал</string>
+    <string name="add_achievement_title">Добавить достижение</string>
+    <string name="achievement_date_hint">Дата</string>
+    <string name="achievement_description_hint">Описание</string>
+    <string name="achievement_points_hint">Баллы</string>
+    <string name="save_achievement_button">Сохранить</string>
+    <string name="upload_document_button">Загрузить файл</string>
 </resources>
+

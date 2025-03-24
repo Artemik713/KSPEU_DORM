@@ -7,21 +7,29 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ListPopupWindow
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
+import androidx.navigation.fragment.findNavController
 import com.example.kspeu.databinding.StudentsPointsViewBinding
 
 class StudentsPointsViewFragment : Fragment() {
 
     private var _binding: StudentsPointsViewBinding? = null
     private val binding get() = _binding!!
+    private lateinit var achievementRepository: AchievementRepository
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = StudentsPointsViewBinding.inflate(inflater, container, false)
-        val view = binding.root
+        return binding.root
+    }
 
-        val items = listOf("2024-2025","2023-2024", "2022-2023", "2021-2022")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        achievementRepository = AchievementRepository()
+
+        val items = listOf("2025-2024", "2023-2024", "2022-2023", "2021-2022")
         val adapter = ArrayAdapter(requireContext(), R.layout.list_item, items)
         binding.dropdownTextView.setAdapter(adapter)
 
@@ -37,14 +45,13 @@ class StudentsPointsViewFragment : Fragment() {
         binding.dropdownTextView.setOnClickListener {
             listPopupWindow.show()
         }
-        binding.addAchievementButton.setOnClickListener {
-            // Здесь будет код, который выполняется при нажатии на кнопку
-            // Например, переход на другой фрагмент или открытие диалогового окна
-            // Пока просто выведем сообщение в лог
-            println("Кнопка 'Добавить достижения' нажата!")
-        }
 
-        return view
+        binding.quarter1Button.setOnClickListener {
+            findNavController().navigate(R.id.action_studentsPointsViewFragment_to_quarter1Fragment)
+        }
+        binding.addAchievementButton.setOnClickListener {
+            findNavController().navigate(R.id.addAchievementFragment)
+        }
     }
 
     override fun onDestroyView() {

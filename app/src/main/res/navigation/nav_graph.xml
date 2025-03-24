@@ -27,5 +27,19 @@
         android:id="@+id/studentsPointsViewFragment"
         android:name="com.example.kspeu.StudentsPointsViewFragment"
         android:label="StudentsPointsViewFragment"
-        tools:layout="@layout/students_points_view" />
+        tools:layout="@layout/students_points_view">
+        <action
+            android:id="@+id/action_studentsPointsViewFragment_to_quarter1Fragment"
+            app:destination="@id/quarter1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quarter1Fragment"
+        android:name="com.example.kspeu.Quarter1Fragment"
+        android:label="Quarter1Fragment"
+        tools:layout="@layout/fragment_quarter_1" />
+    <fragment
+        android:id="@+id/addAchievementFragment"
+        android:name="com.example.kspeu.AddAchievementFragment"
+        android:label="AddAchievementFragment"
+        tools:layout="@layout/fragment_add_achievement" />
 </navigation>
