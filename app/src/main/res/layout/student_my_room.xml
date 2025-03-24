@@ -9,7 +9,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@id/StudentDescribtion"
+        android:id="@+id/student_description_card_1"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -32,7 +32,7 @@
         app:strokeWidth="5dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/avatar_image_view"
+            android:id="@+id/avatar_image_view_1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="25dp"
@@ -47,7 +47,7 @@
             tools:ignore="DuplicateIds" />
 
         <TextView
-            android:id="@+id/StudentDescribtion"
+            android:id="@+id/student_description_text_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
@@ -66,7 +66,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@id/StudentDescribtion"
+        android:id="@+id/student_description_card_2"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -89,7 +89,7 @@
         app:strokeWidth="5dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/avatar_image_view"
+            android:id="@+id/avatar_image_view_2"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="25dp"
@@ -104,7 +104,7 @@
             tools:ignore="DuplicateIds" />
 
         <TextView
-            android:id="@+id/StudentDescribtion"
+            android:id="@+id/student_description_text_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
@@ -123,7 +123,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@id/StudentDescribtion"
+        android:id="@+id/student_description_card_3"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -146,7 +146,7 @@
         app:strokeWidth="5dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/avatar_image_view"
+            android:id="@+id/avatar_image_view_3"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="25dp"
@@ -161,7 +161,7 @@
             tools:ignore="DuplicateIds" />
 
         <TextView
-            android:id="@+id/StudentDescribtion"
+            android:id="@+id/student_description_text_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
@@ -217,7 +217,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@id/StudentDescribtion"
+        android:id="@+id/student_description_card_4"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -240,7 +240,7 @@
         app:strokeWidth="5dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/avatar_image_view"
+            android:id="@+id/avatar_image_view_4"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="25dp"
@@ -255,7 +255,7 @@
             tools:ignore="DuplicateIds" />
 
         <TextView
-            android:id="@+id/StudentDescribtion"
+            android:id="@+id/student_description_text_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
@@ -274,7 +274,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@id/StudentDescribtion"
+        android:id="@+id/student_description_card_5"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -297,7 +297,7 @@
         app:strokeWidth="5dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/avatar_image_view"
+            android:id="@+id/avatar_image_view_5"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="25dp"
@@ -312,7 +312,7 @@
             tools:ignore="DuplicateIds" />
 
         <TextView
-            android:id="@+id/StudentDescribtion"
+            android:id="@+id/student_description_text_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"

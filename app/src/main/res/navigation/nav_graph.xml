@@ -18,5 +18,14 @@
         android:id="@+id/mainMenuFragment"
         android:name="com.example.kspeu.MainMenuFragment"
         android:label="MainMenuFragment"
-        tools:layout="@layout/fragment_student_main_menu" />
+        tools:layout="@layout/fragment_student_main_menu">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_studentsPointsViewFragment"
+            app:destination="@id/studentsPointsViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentsPointsViewFragment"
+        android:name="com.example.kspeu.StudentsPointsViewFragment"
+        android:label="StudentsPointsViewFragment"
+        tools:layout="@layout/students_points_view" />
 </navigation>

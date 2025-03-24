@@ -27,6 +27,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding = true // Вот где нужно включать viewBinding
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -55,4 +59,5 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.appcompat:appcompat:1.7.0")
 }

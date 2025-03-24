@@ -16,12 +16,57 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="880dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="33dp"/>
+    <TextView
+        android:id="@+id/select_year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/students_points_view_select_year_label"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/dropdown_text_view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/dropdown_text_view"
+        android:layout_width="0dp"
+        android:layout_height="47.88dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="sans-serif"
+        android:inputType="none"
+        android:letterSpacing="0.01"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PointView"/>
+
+    <Button
+        android:id="@+id/add_achievement_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/students_points_view_add_achievement"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

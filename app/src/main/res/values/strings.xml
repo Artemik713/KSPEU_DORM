@@ -22,4 +22,6 @@
     <string name="student_my_room_button_text">Посмотреть график дежурств</string>
     <string name="student_my_room_information_about_room">Информация о комнате</string>
     <string name="students_points_view_prosmotr_ballov">Просмотр баллов</string>
+    <string name="students_points_view_select_year_label">Выберите учебный год</string>
+    <string name="students_points_view_add_achievement">Добавить достижения</string>
 </resources>

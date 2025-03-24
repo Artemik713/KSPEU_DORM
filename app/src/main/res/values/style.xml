@@ -4,4 +4,7 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+    <style name="ExposedDropdownMenuStyle" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
 </resources>
